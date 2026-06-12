@@ -1,0 +1,104 @@
+/* ===== GLOBAL ===== */
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: #f4f7fb;
+    color: #333;
+}
+
+/* ===== TITLE ===== */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+/* ===== NAV BUTTONS ===== */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+/* Different button colors */
+button:nth-child(1) { background: #3498db; color: white; }
+button:nth-child(2) { background: #2ecc71; color: white; }
+button:nth-child(3) { background: #9b59b6; color: white; }
+button:nth-child(4) { background: #e67e22; color: white; }
+
+/* Hover effect */
+button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+/* ===== FORM STYLE ===== */
+input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 180px;
+}
+
+form, .form-box {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+/* ===== LIST DISPLAY ===== */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    margin: 10px 0;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 8px rgba(0,0,0,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== ACTION BUTTONS ===== */
+li button {
+    margin-left: 8px;
+    padding: 6px 10px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+/* Edit button */
+li button:nth-child(1) {
+    background: #f1c40f;
+    color: black;
+}
+
+/* Delete button */
+li button:nth-child(2) {
+    background: #e74c3c;
+    color: white;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 600px) {
+    input {
+        width: 100%;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
